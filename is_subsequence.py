@@ -1,0 +1,17 @@
+def is_subsequence(s, t):
+    i = 0
+    j = 0
+    while i < len(s) and j < len(t):
+        if s[i] == t[j]:
+            i += 1
+        j += 1
+    return i == len(s)
+
+# User input
+s = input("Enter subsequence string: ")
+t = input("Enter main string: ")
+
+if is_subsequence(s, t):
+    print("True")
+else:
+    print("False")
